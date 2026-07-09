@@ -19,12 +19,12 @@ class DepartamentoViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
 
 def index(request):
-    return render(request, 'propiedades/index.html')
+    return render(request, 'index.html')
 
 def listar_edificios(request):
     edificios = Edificio.objects.all()
-    return render(request, 'propiedades/listar_edificios.html', {'edificios': edificios})
+    return render(request, 'listar_edificios.html', {'edificios': edificios})
 
 def listar_departamentos(request):
     departamentos = Departamento.objects.all()
-    return render(request, 'propiedades/listar_departamentos.html', {'departamentos': departamentos})
+    return render(request, 'listar_departamentos.html', {'departamentos': departamentos})
