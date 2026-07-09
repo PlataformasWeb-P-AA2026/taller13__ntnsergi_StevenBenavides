@@ -1,0 +1,152 @@
+@import url('https://fonts.cdnfonts.com/css/intel-one-mono');
+
+/* reutilice un css que usabamos en otro proyecto  */
+:root {
+    --bg-color: #f5f5f7;
+    --surface-color: #ffffff;
+    --text-color: #1d1d1f;
+    --text-secondary: #86868b;
+    --accent-color: #0066cc;
+    --link-hover: #0077ed;
+    --border-color: #d2d2d7;
+}
+
+body {
+    font-family: 'Intel One Mono', monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container {
+    background-color: var(--surface-color);
+    border-radius: 18px;
+    padding: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 10px 15px rgba(0, 0, 0, 0.03);
+    width: 100%;
+    max-width: 800px;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    margin: 0.5rem;
+    border-radius: 980px;
+    background-color: rgba(0, 102, 204, 0.05);
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+a:hover {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input,
+select,
+button {
+    font-family: 'Intel One Mono', monospace;
+    padding: 1rem 1.2rem;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.1);
+}
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    border-radius: 980px;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: var(--link-hover);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: var(--surface-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+    padding: 1.2rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: #fbfbfd;
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background-color: rgba(0, 0, 0, 0.01);
+}
