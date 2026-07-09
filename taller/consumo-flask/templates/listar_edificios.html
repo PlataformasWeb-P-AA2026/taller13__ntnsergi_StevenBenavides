@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edificios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <h1>Listado de edificios</h1>
+
+    {%for e in edificios %}
+
+    <ol>
+        <li><b>Nombre: </b>{{e['nombre']}}</li>
+        <li><b>Dirección: </b>{{e['direccion']}}</li>
+        <li><b>Ciudad: </b>{{e['ciudad']}}</li>
+        <li><b>Tipo: </b>{{e['tipo']}}</li>
+    </ol>
+    <hr>
+    {% endfor%}
+
+</body>
+
+</html>
