@@ -71,3 +71,20 @@ Nota: Un departamento pertenece a un edificio
 	- Listar Departamentos haciendo uso de los servicios web creados en el proyecto de Django.
 	- Crear Edificios haciendo uso de los servicios web creados en el proyecto de Django.
 	- Crear Departamentos haciendo uso de los servicios web creados en el proyecto de Django.
+
+
+## Integrantes
+
+Sergi Montaño - Steven Benavides
+
+## Capturas De Todo 
+### SQLite
+
+<img width="1918" height="1078" alt="Captura de pantalla SQL 1 " src="https://github.com/user-attachments/assets/0895119e-c5d7-4188-9870-27d4532d665a" />
+
+<img width="1918" height="1078" alt="Captura de pantalla SQL 2" src="https://github.com/user-attachments/assets/f0bc359e-e3bf-4624-8374-bb68ea2c1bf0" />
+
+### Postgres
+
+<img width="1918" height="1078" alt="Captura de pantalla postgres" src="https://github.com/user-attachments/assets/8e34da51-8844-4a90-a1e9-e723d0c12dad" />
+
